@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <main>
+      <p class="welcome-board">
+        Welcome to our ticket board! We have 6 cities to flight from in and out
+        Here. You Can Find The Cheapest ticket to flight from one city to
+        Another!
+      </p>
+      <div class="forms">
+        <form>
+          <label for="fcity">The city that you want to flight from:</label>
+          <select name="cities" id="fcity">
+            <option value="TASHKENT">TASHKENT</option>
+            <option value="MOSCOW">MOSCOW</option>
+            <option value="LONDON">LONDON</option>
+            <option value="NEW-DELHI">NEW-DELHI</option>
+            <option value="NEW-YORK">NEW-YORK</option>
+            <option value="DUBAI">DUBAI</option>
+          </select>
+        </form>
+        <form>
+          <label for="scity">The city that you want to flight to:</label>
+          <select name="cities" id="scity">
+            <option value="TASHKENT">TASHKENT</option>
+            <option value="MOSCOW">MOSCOW</option>
+            <option value="LONDON">LONDON</option>
+            <option value="NEW-DELHI">NEW-DELHI</option>
+            <option value="NEW-YORK">NEW-YORK</option>
+            <option value="DUBAI">DUBAI</option>
+          </select>
+        </form>
+      </div>
+      <button onclick="clickEventHandler()" class="click">
+        FIND CHEAPEST TICKET!
+      </button>
+      <div class="order-of-cities"></div>
+      <div class="price"></div>
+    </main>
+  </body>
+</html>
